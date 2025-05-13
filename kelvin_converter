@@ -1,15 +1,8 @@
 // kelvin = 293
 const kelvin = 293;
-let celsius;
-let fahrenheit;
-let newton;
+let celsius = kelvin - 273;
+let fahrenheit = celsius * (9 / 5) + 32;
+let newton = celsius * (33 / 100);
 
-// changing kelvin to celsius
-celsius = kelvin - 273;
-fahrenheit = celsius * (9 / 5) + 32;
-newton = celsius * (33 / 100);
-
-// fahrenheit = Math.floor(fahrenheit);
-
-console.log(`The temperature is ${Math.floor(fahrenheit)} degrees fahrenheit`);
+console.log(`The temperature is ${Math.floor(fahrenheit)} degrees Fahrenheit`);
 console.log(`The temperature is ${Math.floor(newton)} degrees Newtons`);
